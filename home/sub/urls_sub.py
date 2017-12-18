@@ -6,5 +6,5 @@ from home.views import SubSubTestView
 
 
 urlpatterns = [
-    url(r'^subsubtest/', SubSubTestView.as_view(), name='subsubtest'),
+    url(r'^subsubtest/', SubSubTestView.as_view()),
 ]

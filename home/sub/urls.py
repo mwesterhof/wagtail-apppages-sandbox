@@ -7,6 +7,6 @@ from home.sub import urls_sub as subsub_urls
 
 
 urlpatterns = [
-    url(r'^subtest/$', SubTestView.as_view(), name='subtest'),
+    url(r'^subtest/$', SubTestView.as_view()),
     url(r'^subsubtest/', include(subsub_urls)),
 ]
