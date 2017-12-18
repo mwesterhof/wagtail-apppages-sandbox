@@ -16,3 +16,7 @@ class ParamTestView(TemplateView):
 
 class SubTestView(TemplateView):
     template_name = 'home/sub_test.html'
+
+
+class SubSubTestView(TemplateView):
+    template_name = 'home/sub_sub_test.html'
