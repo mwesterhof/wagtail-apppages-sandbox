@@ -1,6 +1,7 @@
 '''
 TODO:
     * sitemap linkage
+    * reverse templatetag
 '''
 from importlib import import_module
 
