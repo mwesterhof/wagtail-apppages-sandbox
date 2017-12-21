@@ -1,7 +1,7 @@
 '''
 TODO:
     * sitemap linkage
-    * reverse templatetag
+    * duplicate view method issue
 '''
 from importlib import import_module
 
@@ -87,7 +87,7 @@ class AppPageMixin(RoutablePageMixin):
 
     def reverse(self, name, *args, **kwargs):
         sub_url = django_reverse(
-            name, urlconf=self.url_config, *args, **kwargs)
+            name, urlconf=self.url_config, args=args, **kwargs)
         return self.url + sub_url.lstrip('/')
 
     def __new__(cls, *args, **kwargs):
